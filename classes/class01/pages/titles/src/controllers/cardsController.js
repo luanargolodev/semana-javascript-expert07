@@ -30,11 +30,9 @@ export default class CardsController {
 
   async init() {
     await this.#loadDB()
-    this.#view.configureOnSearchInput(
-      this.#onSearchInput.bind(this)
-    )
+    this.#view.configureOnSearchInput(this.#onSearchInput.bind(this))
 
-    this.addCards("")
+    this.addCards('')
   }
 
   static async initialize(deps) {
