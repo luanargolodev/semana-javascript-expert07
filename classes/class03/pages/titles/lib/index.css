@@ -631,7 +631,7 @@ a {
   background-color: #616161;
 }
 
-.card:hover .overlay,
+/* .card:hover .overlay,
 .card.active .overlay {
   display: flex;
   background-image: linear-gradient(
@@ -639,14 +639,16 @@ a {
     rgba(51, 51, 51, 0.95),
     rgba(255, 255, 255, 0.01)
   );
-}
-
-/* .card .overlay {
-    display: flex;
-    background-image: linear-gradient(to right,
-            rgba(51, 51, 51, 0.95),
-            rgba(255, 255, 255, 0.01));
 } */
+
+.card .overlay {
+  display: flex;
+  background-image: linear-gradient(
+    to right,
+    rgba(51, 51, 51, 0.95),
+    rgba(255, 255, 255, 0.01)
+  );
+}
 
 .overlay p {
   color: #bdbdbd;
@@ -1194,12 +1196,7 @@ a {
 }
 
 #hands {
-  /* faz com que elementos possam ser clicavel */
   pointer-events: none;
-
-  /* faz ficar em cima dos elementos */
   position: fixed;
-
-  /* fica à frente dos elementos */
-  z-index: 2;
+  z-index: 99999;
 }
