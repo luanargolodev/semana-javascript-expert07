@@ -25,10 +25,10 @@ for (let finger of Finger.all) {
   scrollUpGesture.addCurl(finger, FingerCurl.NoCurl, 1.0)
 }
 
-const knowGestures = [scrollDownGesture, scrollUpGesture]
+const knownGestures = [scrollDownGesture, scrollUpGesture]
 const gestureStrings = {
   'scroll-down': '✊️',
   'scroll-up': '🖐',
 }
 
-export { knowGestures, gestureStrings }
+export { knownGestures, gestureStrings }
